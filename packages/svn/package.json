@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "event-kit": "2.0.0",
-    "jquery": "2.2.0",
+    "jquery": "3.5.0",
     "jsdifflib": "1.1.0"
   },
   "deprecated": false,
