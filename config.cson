@@ -1,15 +1,13 @@
 "*":
+  "autocomplete-python-jedi":
+    useSnippets: "all"
   core:
-    disabledPackages: [
-      "autocomplete-plus"
-    ]
     telemetryConsent: "no"
     uriHandlerRegistration: "always"
   editor:
     atomicSoftTabs: false
     autoIndent: false
     autoIndentOnPaste: false
-    fontSize: 15
     invisibles:
       tab: " "
     showIndentGuide: true

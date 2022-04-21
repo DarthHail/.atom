@@ -1,0 +1,10 @@
+INFO: Platform: win32
+INFO: Version Info: v0.3.0
+DEBUG: Log Path: C:\Users\mungerc\.atom\packages\atom-python-run\cp.log
+DEBUG: command: ['python', 'C:\\Users\\mungerc\\Git\\DarthHail\\Laura\\Game\\haunted_house.py']
+DEBUG: file: None
+DEBUG: pause: True
+DEBUG: repl: python
+DEBUG: args: ['C:\\Users\\mungerc\\Git\\DarthHail\\Laura\\Game\\haunted_house.py']
+INFO: return code: 0 (0x0)
+INFO: elapsed time: 77.385825

@@ -1,0 +1,85 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+  "_id": "autocomplete-python-jedi@1.10.3-0",
+  "_inBundle": false,
+  "_integrity": "sha512-S6gRqlURRGzq/p8avACTyxqMBvvB2zRXMCxxKceJrViu91isFcU0uKTSJJW1eLwOwUg4lEZMPmiBYGM/n3HRqA==",
+  "_location": "/autocomplete-python-jedi",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+  "_shasum": "f87625fb6e51270c41671112debde6e943e3a725",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-python-jedi/versions/1.10.3-0/tarball",
+  "_where": "C:\\Users\\mungerc\\AppData\\Local\\Temp\\apm-install-dir-2022320-26760-1u7u6ca.wqx4",
+  "bugs": {
+    "url": "https://github.com/brennv/autocomplete-python-jedi/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "snippets": {
+      "versions": {
+        "0.1.0": "consumeSnippets"
+      }
+    }
+  },
+  "contributors": [
+    {
+      "name": "Dmitry Sadovnychyi",
+      "email": "autocomplete-python@dmit.ro"
+    },
+    {
+      "name": "Daniel Hung",
+      "email": "daniel@kite.com"
+    }
+  ],
+  "dependencies": {
+    "atom-slick": "^2.0.0",
+    "atom-space-pen-views": "~2.1.0",
+    "fuzzaldrin-plus": "^0.3.1",
+    "mixpanel": "^0.5.0",
+    "selector-kit": "^0.1",
+    "space-pen": "^5.1.2",
+    "underscore": "^1.8.3"
+  },
+  "deprecated": false,
+  "description": "Python completions for packages, variables, methods, functions, with their arguments. Powered by Jedi.",
+  "engines": {
+    "atom": ">=0.194.0 <2.0.0"
+  },
+  "homepage": "https://github.com/brennv/autocomplete-python-jedi#readme",
+  "keywords": [
+    "python",
+    "autocomplete",
+    "jedi"
+  ],
+  "license": "GPL",
+  "main": "./lib/main",
+  "name": "autocomplete-python-jedi",
+  "package-dependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    },
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getHyperclickProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennv/autocomplete-python-jedi.git"
+  },
+  "version": "1.10.3-0"
+}
