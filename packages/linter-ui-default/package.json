@@ -1,25 +1,38 @@
 {
-  "_from": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-  "_id": "linter-ui-default@1.8.1",
+  "_from": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_id": "linter-ui-default@3.4.1",
   "_inBundle": false,
-  "_integrity": "sha512-AtVSWjz9Mx/Zpe8g3Y3nuHESSa3zf1NjL55379NxzKop43nhIlI0IE0QEzlfO0yB89Vignwe3BlQlXlKpQhMeA==",
+  "_integrity": "sha512-VJmM8GXtGiKhaR1qmt2WXCgwnLHURyteQG0RtbzSTfPMrCgtahvlh7rqpVDNrj4USCISCvmK+a++SGukRGMpfQ==",
   "_location": "/linter-ui-default",
+  "_moduleAliases": {
+    "solid-js": "./node_modules/solid-js/dist/solid.cjs",
+    "solid-js/web": "./node_modules/solid-js/web/dist/web.cjs"
+  },
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball"
+    "raw": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-  "_shasum": "6ac056d31e7e12a586b09be4b1eb42a9c1f36488",
-  "_spec": "https://www.atom.io/api/packages/linter-ui-default/versions/1.8.1/tarball",
-  "_where": "C:\\Users\\mungerc\\AppData\\Local\\Temp\\apm-install-dir-120016-4736-4uj13a.9f2cf",
+  "_resolved": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_shasum": "7132ebb019bcb60eb91bea1c8deee43b253a81b5",
+  "_spec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_where": "C:\\Users\\mungerc\\AppData\\Local\\Temp\\apm-install-dir-2022321-33688-z8iecm.tpd7",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "alias": {
+    "solid-js": "solid-js/dist/solid.js",
+    "solid-js/web": "solid-js/web/dist/web.js",
+    "solid-simple-table": "solid-simple-table/dist/SimpleTable.module.js",
+    "marked": "marked/lib/marked.esm.js"
+  },
   "bugs": {
     "url": "https://github.com/steelbrain/linter-ui-default/issues"
   },
@@ -153,6 +166,20 @@
       "type": "number",
       "default": 100,
       "order": 3
+    },
+    "longLineLength": {
+      "title": "Long Line Length",
+      "description": "If an editor has a line with a length more than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 4000,
+      "order": 10
+    },
+    "largeFileLineCount": {
+      "title": "Large File Line Count",
+      "description": "If an editor more line numbers than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 20000,
+      "order": 11
     }
   },
   "consumedServices": {
@@ -168,6 +195,7 @@
     }
   },
   "dependencies": {
+<<<<<<< Updated upstream
     "atom-package-deps": "^5.1.0",
     "disposable-event": "^1.0.3",
     "marked": "^4.0.10",
@@ -175,16 +203,47 @@
     "react-dom": "^16.9.0",
     "sb-debounce": "^1.0.1",
     "sb-react-table": "^1.0.2"
+=======
+    "atom-ide-base": "3.1.1",
+    "atom-package-deps": "^7.2.3",
+    "disposable-event": "^2.0.0",
+    "marked": "^2.1.2",
+    "solid-js": "~0.26.5",
+    "solid-simple-table": "0.2.6"
+>>>>>>> Stashed changes
   },
   "deprecated": false,
   "description": "Default UI for the Linter package",
   "devDependencies": {
-    "eslint-config-steelbrain": "^5.0.0",
-    "flow-bin": "^0.67.1",
-    "jasmine-fix": "^1.0.1"
+    "@babel/cli": "^7.14.5",
+    "@types/atom": "^1.40.10",
+    "@types/chance": "^1.1.2",
+    "@types/jasmine": "^3.7.7",
+    "@types/lodash": "^4.14.170",
+    "@types/marked": "^2.0.3",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/requestidlecallback": "^0.3.1",
+    "babel-preset-atomic": "^4.1.0",
+    "babel-preset-solid": "~0.26.5",
+    "build-commit": "0.1.4",
+    "chance": "^1.1.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.29.0",
+    "eslint-config-atomic": "1.16.1",
+    "gitly": "^2.1.1",
+    "jasmine-fix": "^1.3.1",
+    "module-alias": "^2.2.2",
+    "parcel": "2.0.0-nightly.729",
+    "prettier-config-atomic": "^2.0.5",
+    "shx": "^0.3.3",
+    "terser-config-atomic": "^0.1.1",
+    "typescript": "^4"
   },
   "engines": {
-    "atom": ">=1.19.0 <2.0.0"
+    "atom": ">=1.52.0",
+    "electron": ">=6.x"
   },
   "homepage": "https://github.com/steelbrain/linter-ui-default#readme",
   "keywords": [
@@ -192,11 +251,16 @@
     "linter-ui-default"
   ],
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "name": "linter-ui-default",
   "package-deps": [
-    "intentions",
-    "linter"
+    {
+      "name": "intentions"
+    },
+    {
+      "name": "linter",
+      "minimumVersion": "3.0.0"
+    }
   ],
   "providedServices": {
     "linter-ui": {
@@ -215,8 +279,35 @@
     "url": "git+https://github.com/steelbrain/linter-ui-default.git"
   },
   "scripts": {
-    "lint": "(flow check) && (eslint . ) && (prettier --list-different lib/*.js)",
-    "test": "apm test"
+    "benchmark": "cross-env NODE_ENV=production npm run build.unit && atom --test ./benchmark/benchmark.js",
+    "build": "cross-env NODE_ENV=production parcel build --target main ./lib/index.ts --detailed-report 50",
+    "build-commit": "npm run clean && npm run types && build-commit -o dist",
+    "build.unit": "npm run types && babel ./lib --out-dir ./dist --config-file ./babel.unit.config.json --extensions .tsx,.ts",
+    "clean": "shx rm -rf dist",
+    "dev": "cross-env NODE_ENV=development parcel watch --target main ./lib/index.ts",
+    "format": "prettier --write .",
+    "get.linter-types": "node ./scripts/get-linter-types.js",
+    "lint": "eslint . --fix",
+    "prepare": "npm run get.linter-types && npm run build",
+    "prepublishOnly": "npm run build-commit",
+    "test": "npm run build.unit && npm run build && npm run test.only",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint .",
+    "test.only": "atom --test spec",
+    "types": "(tsc -p ./lib/tsconfig.json --emitDeclarationOnly || echo done) && (shx cp -r ./lib/types/ dist/types && shx rm -rf ./dist/types/linter/)"
   },
-  "version": "1.8.1"
+  "targets": {
+    "main": {
+      "context": "electron-renderer",
+      "includeNodeModules": {
+        "atom": false,
+        "electron": false,
+        "atom-package-deps": false,
+        "disposable-event": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "3.4.1"
 }

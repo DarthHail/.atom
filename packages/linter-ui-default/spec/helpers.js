@@ -1,6 +1,6 @@
 /* @flow */
 
-export function getMessage(type?: string = 'Error', filePath: ?string, range: ?Object): Object {
+export function getMessage(type: ?string = 'Error', filePath: ?string, range: ?Object): Object {
   const message: Object = {
     version: 2,
     severity: type.toLowerCase(),
@@ -15,7 +15,9 @@ export function getLinter(name: ?string = 'some'): Object {
   return {
     name,
     grammarScopes: [],
-    lint() {},
+    lint() {
+      /* no operation */
+    },
   }
 }
 
